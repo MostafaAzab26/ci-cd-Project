@@ -1,10 +1,10 @@
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 @app.route("/")
 def home():
-    return "Welcome"
+    return "Hello CI/CD Pipeline!"
 
-if __name__ == "__main__":
-    app.run()
+if _name_ == "_main_":
+    app.run(host="0.0.0.0", port=5000)
